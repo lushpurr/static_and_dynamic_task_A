@@ -36,7 +36,7 @@ class TestCardGame(unittest.TestCase):
         card3 = Card("diamonds", 5)
         cards = [card1, card2, card3]
         result = CardGame.cards_total(self, cards)
-        self.assertEqual(17, result)
+        self.assertEqual("You have a total of 17, result)
         
 
     
