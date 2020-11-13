@@ -10,4 +10,6 @@ class TestCardGame(unittest.TestCase):
     def test_check_for_ace_true(self):
         card1 = Card("hearts", 1)
         result = CardGame.check_for_ace(self, card1)
-        selfAssertEqual(True, result)
+        self.AssertEqual(True, result)
+
+    
