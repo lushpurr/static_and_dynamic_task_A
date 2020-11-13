@@ -36,6 +36,6 @@ def cards_total(self, cards): # indentation didnt notice til last test!
   total # variable total not defined. Should be total = 0
   for card in cards:
     total += card.value
-    return "You have a total of" + total # needs to be wrapped in formatted print statement
+    return "You have a total of" + total # needs to be wrapped in formatted print statement also need indentation fixed to allow for loop to work correctly
   
 ```
