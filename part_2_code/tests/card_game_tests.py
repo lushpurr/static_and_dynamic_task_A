@@ -25,7 +25,10 @@ class TestCardGame(unittest.TestCase):
         
 
     def test_highest_card_card2(self):
-
+        card1 = Card("hearts", 2)
+        card2 = Card("spades", 10)
+        result = CardGame.check_for_ace(self, card1, card2)
+        self.AssertEqual(card2, result)
 
     def test_card_total(self):
 
