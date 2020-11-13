@@ -10,25 +10,25 @@ class TestCardGame(unittest.TestCase):
     def test_check_for_ace_true(self):
         card1 = Card("hearts", 1)
         result = CardGame.check_for_ace(self, card1)
-        self.AssertEqual(True, result)
+        self.assertEqual(True, result)
 
     def test_check_for_ace_false(self):
         card1 = Card("hearts", 2)
         result = CardGame.check_for_ace(self, card1)
-        self.AssertEqual(False, result)
+        self.assertEqual(False, result)
 
     def test_highest_card_card1(self):
         card1 = Card("hearts", 10)
         card2 = Card("spades", 2)
         result = CardGame.highest_card(self, card1, card2)
-        self.AssertEqual(card1, result)
+        self.assertEqual(card1, result)
         
 
     def test_highest_card_card2(self):
         card1 = Card("hearts", 2)
         card2 = Card("spades", 10)
         result = CardGame.highest_card(self, card1, card2)
-        self.AssertEqual(card2, result)
+        self.assertEqual(card2, result)
 
     def test_card_total(self):
         card1 = Card("hearts", 2)
@@ -36,7 +36,7 @@ class TestCardGame(unittest.TestCase):
         card3 = Card("diamonds", 5)
         cards = [card1, card2, card3]
         result = CardGame.cards_total(self, cards)
-        self.AssertEqual(17, result)
+        self.assertEqual(17, result)
         
 
     
