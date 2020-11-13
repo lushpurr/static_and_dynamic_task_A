@@ -32,7 +32,7 @@ class CardGame:
   
 
 
-def cards_total(self, cards):
+def cards_total(self, cards): # indentation didnt notice til last test!
   total # variable total not defined. Should be total = 0
   for card in cards:
     total += card.value
